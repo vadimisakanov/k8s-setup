@@ -1,16 +1,16 @@
-### Сетап виртуалок в Селектел
+# Сетап виртуалок в Селектел
 
-# В Selectel.ru мы использовали VPC, настройки я сделал такие:
+### В Selectel.ru мы использовали VPC, настройки я сделал такие:
 
 - конфиг виртуалок
 
-1 vCPU, 4 GB RAM, 10 GB disk - master1-3
+// 1 vCPU, 4 GB RAM, 10 GB disk - master1-3
 
-1 vCPU, 4 GB RAM, 10 GB disk - ingress-1 + доп диск 10 GB для ceph
+// 1 vCPU, 4 GB RAM, 10 GB disk - ingress-1 + доп диск 10 GB для ceph
 
-1 vCPU, 4 GB RAM, 20 GB disk + доп диск 10 GB для ceph - node1, node2
+// 1 vCPU, 4 GB RAM, 20 GB disk + доп диск 10 GB для ceph - node1, node2
 
-ОС: CentOS 7 x64 minimal с openssh.
+// ОС: CentOS 7 x64 minimal с openssh.
 
 - Залить на них ssh ключ своего ПК/управляющего сервера/админбокса.
 
@@ -26,26 +26,21 @@
 
 hostname
 ip's
-root pass
+
 master-1.k8s.vadimisakanov.ru
 172.20.100.2
-
 
 master-2.k8s.vadimisakanov.ru
 172.20.100.3
 
-
 master-3.k8s.vadimisakanov.ru
 172.20.100.4
-
 
 ingress-1.k8s.vadimisakanov.ru
 172.20.100.5, 92.53.100.30
 
-
 node-1.k8s.vadimisakanov.ru
 172.20.100.6
-
 
 node-2.k8s.vadimisakanov.ru
 172.20.100.7
